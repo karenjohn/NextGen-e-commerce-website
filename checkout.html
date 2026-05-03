@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – NextGen Gadgets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <input type="checkbox" id="hamburger-toggle" hidden>
+  <div class="logo">NextGen Gadgets</div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for a product..." aria-label="Search">
+    <button aria-label="Search"><img src="search.png" alt="Search"></button>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html">Categories</a>
+    <a href="brands.html">Brands</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="accounts.html" class="icon-link"><img src="user.png" alt="Account"></a>
+    <a href="cart.html" class="icon-link"><img src="shopping-cart.png" alt="Cart"></a>
+  </nav>
+  <label class="hamburger-label" for="hamburger-toggle">
+    <span></span><span></span><span></span>
+  </label>
+  <nav class="hamburger-menu">
+    <a href="TechStore.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html">Categories</a>
+    <a href="brands.html">Brands</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="accounts.html">Account / Login</a>
+  </nav>
+</header>
+
+<!-- ====== PAGE TITLE ====== -->
+<div class="checkout-title page-load-anim">
+  <h1>Checkout</h1>
+  <p>Complete your order by filling in your details below</p>
+</div>
+
+<!-- ====== CHECKOUT CONTAINER ====== -->
+<div class="checkout-container page-load-anim" style="animation-delay:0.2s;">
+
+  <!-- Shipping Information -->
+  <div class="checkout-section">
+    <h2>Shipping Information</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" placeholder="Doe">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="john@email.com">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+27 82 123 4567">
+      </div>
+    </div>
+    <div class="form-group form-group-full">
+      <label>Street Address</label>
+      <input type="text" placeholder="123 Main Street, Apartment 4B">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" placeholder="Cape Town">
+      </div>
+      <div class="form-group">
+        <label>Province</label>
+        <input type="text" placeholder="Western Cape">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Postal Code</label>
+        <input type="text" placeholder="8001">
+      </div>
+      <div class="form-group">
+        <label>Country</label>
+        <input type="text" placeholder="South Africa">
+      </div>
+    </div>
+    <div class="form-group form-group-inline">
+      <input type="checkbox" id="billingDifferent">
+      <label for="billingDifferent">Shipping details different from billing details</label>
+    </div>
+  </div>
+
+  <!-- Billing Details -->
+  <div class="checkout-section">
+    <h2>Billing Details</h2>
+    <p>Fill in only if different from shipping details</p>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Street Address</label>
+        <input type="text" placeholder="456 Another St, Apt 5C">
+      </div>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" placeholder="Johannesburg">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Province</label>
+        <input type="text" placeholder="Gauteng">
+      </div>
+      <div class="form-group">
+        <label>Postal Code</label>
+        <input type="text" placeholder="2000">
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment Method -->
+  <div class="checkout-section">
+    <h2>Payment Method</h2>
+    <h3 class="mt-10">Other Payment Options</h3>
+    <p>Click the logo to choose:</p>
+    <div class="payment-logos">
+      <a href="#"><img src="paypal.png" alt="PayPal"></a>
+      <a href="#"><img src="payflex.png" alt="Payflex"></a>
+      <a href="#"><img src="stripe.png" alt="Stripe"></a>
+      <a href="#"><img src="payfast.png" alt="Payfast"></a>
+    </div>
+    <div class="form-group mt-10">
+      <label><input type="radio" name="payment"> Instant EFT</label>
+      <select>
+        <option>Choose your bank</option>
+        <option>FNB</option>
+        <option>Standard Bank</option>
+        <option>ABSA</option>
+        <option>Nedbank</option>
+        <option>Capitec</option>
+      </select>
+    </div>
+    <h3 class="mt-20">Credit / Debit Card</h3>
+    <div class="payment-card-row">
+      <label><input type="radio" name="payment" value="visa"> <img src="visa.png" alt="Visa"></label>
+      <label><input type="radio" name="payment" value="mastercard"> <img src="mastercard.png" alt="Mastercard"></label>
+    </div>
+    <div class="form-group">
+      <label>Cardholder Name</label>
+      <input type="text" placeholder="John Doe" class="input-md">
+    </div>
+    <div class="form-group">
+      <label>Card Number</label>
+      <input type="text" placeholder="xxxx xxxx xxxx xxxx" class="input-md">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Expiry Date</label>
+        <input type="text" placeholder="MM/YY">
+      </div>
+      <div class="form-group">
+        <label>CVV</label>
+        <input type="text" placeholder="123">
+      </div>
+    </div>
+    <button class="btn btn-outline mt-20">Confirm Payment Method</button>
+  </div>
+
+  <!-- Order Summary -->
+  <div class="checkout-section">
+    <h2>Order Summary</h2>
+    <div class="order-summary-item"><span>iPhone 15</span><span>$999</span></div>
+    <div class="order-summary-item"><span>Asus Vivobook</span><span>$1099</span></div>
+    <div class="order-summary-item"><span>Smart Speaker</span><span>$20</span></div>
+    <div class="order-summary-item"><span>Shipping</span><span>Free</span></div>
+    <div class="order-total"><span>Total</span><span>$2118</span></div>
+    <a href="confirmation.html">
+      <button class="btn btn-accent btn-checkout mt-20">Checkout</button>
+    </a>
+  </div>
+
+</div>
+
+<!-- ====== CHATBOT BUTTON ====== -->
+<div class="chatbot-btn">
+  <img src="chatbot.png" alt="Chat">
+  <span>Need Urgent Help?</span>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-subscribe">
+      <h3>Subscribe for exclusive deals</h3>
+      <p>Get the latest gadgets and special offers straight to your inbox!</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <img src="Facebook.jpg" alt="Facebook"><img src="X.jpg" alt="X">
+        <img src="Instagram.jpg" alt="Instagram"><img src="Tiktok.jpg" alt="TikTok">
+      </div>
+    </div>
+  </div>
+  <div class="footer-mid">
+    <div class="footer-col">
+      <h4>About NextGen Gadgets</h4>
+      <p>Your exclusive tech store, delivering excellence since 2015.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="TechStore.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="brands.html">On Promo</a></li>
+        <li><a href="contact.html">Help</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="smartphones.html">Smartphones &amp; Tablets</a></li>
+        <li><a href="laptops.html">Laptops &amp; Accessories</a></li>
+        <li><a href="smarthome.html">Smart Home Devices</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>Email: <a href="mailto:support@nextgen.co.za">support@nextgen.co.za</a></p>
+      <p>Phone: +27 21 123 4567</p>
+      <p>Location: Cape Town, South Africa</p>
+      <ul>
+        <li>Mon&ndash;Fri: 8am &ndash; 8pm</li>
+        <li>Sat: 9am &ndash; 3pm</li>
+        <li>Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 NextGen Gadgets. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ====== BOTTOM NAVIGATION ====== -->
+<nav class="bottom-nav">
+  <a href="TechStore.html"><img src="home.png" alt="Home"><span>Home</span></a>
+  <a href="about.html"><img src="about.png" alt="About"><span>About</span></a>
+  <a href="categories.html"><img src="categories.png" alt="Categories"><span>Categories</span></a>
+  <a href="brands.html"><img src="brand.png" alt="Brands"><span>Brands</span></a>
+  <a href="accounts.html"><img src="user.png" alt="Account"><span>Account</span></a>
+</nav>
+
+</body>
+</html>

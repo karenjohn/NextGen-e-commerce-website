@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart – NextGen Gadgets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <input type="checkbox" id="hamburger-toggle" hidden>
+  <div class="logo">NextGen Gadgets</div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for a product..." aria-label="Search">
+    <button aria-label="Search"><img src="search.png" alt="Search"></button>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html">Categories</a>
+    <a href="brands.html">Brands</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="accounts.html" class="icon-link"><img src="user.png" alt="Account"></a>
+    <a href="cart.html" class="icon-link"><img src="shopping-cart.png" alt="Cart"></a>
+  </nav>
+  <label class="hamburger-label" for="hamburger-toggle">
+    <span></span><span></span><span></span>
+  </label>
+  <nav class="hamburger-menu">
+    <a href="TechStore.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html">Categories</a>
+    <a href="brands.html">Brands</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="accounts.html">Account / Login</a>
+  </nav>
+</header>
+
+<div class="cart-page-title page-load-anim"><h1>Your Shopping Cart</h1></div>
+<div class="cart-container page-load-anim" style="animation-delay:0.2s;">
+
+  <div class="cart-items">
+    <div class="cart-item">
+      <img src="iphone15.jpg" alt="iPhone 15">
+      <div class="cart-item-info">
+        <h3>iPhone 15</h3><p class="in-stock">In Stock</p><p class="delivery-note">Delivery: 2&ndash;3 days</p>
+        <div class="qty-control"><button>&minus;</button><input type="text" value="1"><button>+</button></div>
+        <div class="cart-item-actions"><a href="#">Delete</a><a href="#">Save for later</a><a href="#">Share</a></div>
+      </div>
+      <div class="cart-item-price">$999</div>
+    </div>
+    <div class="cart-item">
+      <img src="asus vivobook.jpg" alt="ASUS Vivobook">
+      <div class="cart-item-info">
+        <h3>ASUS Vivobook Laptop</h3><p class="in-stock">In Stock</p><p class="delivery-note">Delivery: 2&ndash;3 days</p>
+        <div class="qty-control"><button>&minus;</button><input type="text" value="1"><button>+</button></div>
+        <div class="cart-item-actions"><a href="#">Delete</a><a href="#">Save for later</a><a href="#">Share</a></div>
+      </div>
+      <div class="cart-item-price">$1099</div>
+    </div>
+    <div class="cart-item">
+      <img src="smartspeaker.jpg" alt="Smart Speaker">
+      <div class="cart-item-info">
+        <h3>Smart Speaker Voice Assistant</h3><p class="in-stock">In Stock</p><p class="delivery-note">Delivery: 2&ndash;3 days</p>
+        <div class="qty-control"><button>&minus;</button><input type="text" value="1"><button>+</button></div>
+        <div class="cart-item-actions"><a href="#">Delete</a><a href="#">Save for later</a><a href="#">Share</a></div>
+      </div>
+      <div class="cart-item-price">$20</div>
+    </div>
+    <div class="promo-banner">
+      <img src="happyshopper.jpg" alt="Happy Shopper">
+      <div><h3>NextGen Cares for You!</h3><p>Shop now and pay later in easy installments. Get the gadgets you've always wanted today.</p></div>
+    </div>
+    <div class="related-products">
+      <h3>View more products</h3>
+      <div class="scroll-wrap">
+        <div class="related-grid">
+          <div class="related-card">
+            <a href="airpods.html">
+              <img src="airpods.jpg" alt="AirPods Pro">
+              <b>AirPods Pro</b>
+              <span>$199</span>
+              <div class="stars"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="rating.png" alt="½"><span>(100)</span></div>
+            </a>
+            <a href="cart.html" class="btn btn-accent card-actions-cart">Add to Cart</a>
+          </div>
+          <div class="related-card">
+            <a href="mouse.html">
+              <img src="mouse.jpg" alt="Wireless Mouse">
+              <b>Wireless Mouse</b>
+              <span>$29</span>
+              <div class="stars"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="rating.png" alt="½"><img src="favorite.png" alt="☆"><span>(42)</span></div>
+            </a>
+            <a href="cart.html" class="btn btn-accent card-actions-cart">Add to Cart</a>
+          </div>
+          <div class="related-card">
+            <a href="fastcharger.html">
+              <img src="fast charger.jpg" alt="Fast Charger">
+              <b>Fast Charger</b>
+              <span>$19</span>
+              <div class="stars"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="star.png" alt="★"><img src="favorite.png" alt="☆"><span>(78)</span></div>
+            </a>
+            <a href="cart.html" class="btn btn-accent card-actions-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-sidebar">
+    <div class="cart-summary-box">
+      <h3>Cart Summary</h3><p>Items (3)</p><p class="total">Total: $2118</p>
+      <a href="checkout.html"><button class="btn btn-accent btn-full">Proceed to Checkout</button></a>
+      <hr class="divider"><h4>Tech Store Plus</h4>
+      <p class="cart-plus-note">Stop paying delivery fees and get unlimited free delivery each time you order. <a href="#">Deliver freely now!</a></p>
+    </div>
+    <div class="wishlist-section">
+      <h3>Your Wishlist</h3>
+      <div class="scroll-wrap">
+        <div class="wishlist-grid">
+          <div class="wishlist-card"><span class="wishlist-heart">&#9829;</span><img src="airpods.jpg" alt="AirPods Pro"><b>AirPods Pro</b><div class="price">$199</div><a href="cart.html" class="btn btn-primary card-actions-cart">Move to Cart</a></div>
+          <div class="wishlist-card"><span class="wishlist-heart">&#9829;</span><img src="mouse.jpg" alt="Wireless Mouse"><b>Wireless Mouse</b><div class="price">$29</div><a href="cart.html" class="btn btn-primary card-actions-cart">Move to Cart</a></div>
+          <div class="wishlist-card"><span class="wishlist-heart">&#9829;</span><img src="fast charger.jpg" alt="Fast Charger"><b>Fast Charger</b><div class="price">$19</div><a href="cart.html" class="btn btn-primary card-actions-cart">Move to Cart</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ====== CHATBOT BUTTON ====== -->
+<div class="chatbot-btn">
+  <img src="chatbot.png" alt="Chat">
+  <span>Need Urgent Help?</span>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-subscribe">
+      <h3>Subscribe for exclusive deals</h3>
+      <p>Get the latest gadgets and special offers straight to your inbox!</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <img src="Facebook.jpg" alt="Facebook"><img src="X.jpg" alt="X">
+        <img src="Instagram.jpg" alt="Instagram"><img src="Tiktok.jpg" alt="TikTok">
+      </div>
+    </div>
+  </div>
+  <div class="footer-mid">
+    <div class="footer-col">
+      <h4>About NextGen Gadgets</h4>
+      <p>Your exclusive tech store, delivering excellence since 2015.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="TechStore.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="brands.html">On Promo</a></li>
+        <li><a href="contact.html">Help</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="smartphones.html">Smartphones &amp; Tablets</a></li>
+        <li><a href="laptops.html">Laptops &amp; Accessories</a></li>
+        <li><a href="smarthome.html">Smart Home Devices</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>Email: <a href="mailto:support@nextgen.co.za">support@nextgen.co.za</a></p>
+      <p>Phone: +27 21 123 4567</p>
+      <p>Location: Cape Town, South Africa</p>
+      <ul>
+        <li>Mon&ndash;Fri: 8am &ndash; 8pm</li>
+        <li>Sat: 9am &ndash; 3pm</li>
+        <li>Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 NextGen Gadgets. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ====== BOTTOM NAVIGATION ====== -->
+<nav class="bottom-nav">
+  <a href="TechStore.html"><img src="home.png" alt="Home"><span>Home</span></a>
+  <a href="about.html"><img src="about.png" alt="About"><span>About</span></a>
+  <a href="categories.html"><img src="categories.png" alt="Categories"><span>Categories</span></a>
+  <a href="brands.html"><img src="brand.png" alt="Brands"><span>Brands</span></a>
+  <a href="accounts.html"><img src="user.png" alt="Account"><span>Account</span></a>
+</nav>
+
+
+</body>
+</html>
