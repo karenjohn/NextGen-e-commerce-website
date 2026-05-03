@@ -1,5 +1,7 @@
 # NextGen Gadgets – Online Tech Store
 
+##Live demo [View Website](https://enchanting-concha-049fc9.netlify.app/)
+
 > A responsive e-commerce website for an Online Tech Gadget Store, built iteratively across four web development tutorials. Starting from a static HTML site with inline CSS, the project evolved through external CSS styling with Flexbox/Grid layouts, and culminated in a fully responsive design using CSS media queries. Features 10+ pages targeting students, gamers, remote workers \& tech enthusiasts. Built with HTML5, CSS3 \& JavaScript.
 
 \---
@@ -45,7 +47,7 @@ The website is fully navigable and comprises the following pages:
 
 |Page|File|Description|
 |-|-|-|
-|**Home**|`TechStore.html`|Hero video, trust strip, category tiles, best sellers, new arrivals, brands marquee|
+|**Home**|`index.html`|Hero video, trust strip, category tiles, best sellers, new arrivals, brands marquee|
 |**About Us**|`about.html`|Store history, mission, vision, why choose us, careers section|
 |**Categories**|`categories.html`|Overview of the three product categories with navigation tiles|
 |**Smartphones \& Tablets**|`smartphones.html`|Product listing for smartphones and tablets|
@@ -184,9 +186,9 @@ The website is fully navigable and comprises the following pages:
 ## Folder Structure
 
 ```
-TechStore1.html/
+Next_Gen/
 │
-├── TechStore.html          # Home page (entry point)
+├── index.html          # Home page (entry point)
 ├── about.html
 ├── categories.html
 ├── smartphones.html
